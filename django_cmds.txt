@@ -1,0 +1,12 @@
+-------------Django basics commands-----------------
+
+django-admin startproject myproject	            # to create a project
+python manage.py runserver
+                 migrate 		                # for database init/creation
+                 createsuperuser	            # create super user for db
+                 startapp myapp		            # to create new apps
+                 makemigration                  # makemigration and migrate are always run together after any change in model
+                 migrate                        # makemigration and migrate are always run together after any change in model
+                 shell			                # bring the site cmd line
+
+		 
