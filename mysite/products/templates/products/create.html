@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Create Product</h1>
+{% endblock %}
+
+{% block content_demo %}
+<p> --------- Enter Product Details: --------- </p>
+
+{% if form_status %}<br><h3>Form Submitted</h3><br>{% endif %}
+
+<form action="." method="POST"> {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save" />
+</form>
+{% endblock %}

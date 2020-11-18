@@ -59,7 +59,7 @@ MIDDLEWARE = [
 """route to a url"""
 ROOT_URLCONF = 'mysite.urls'
 
-"""html page that renders in django"""
+"""html page that renders in django and templates location"""
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

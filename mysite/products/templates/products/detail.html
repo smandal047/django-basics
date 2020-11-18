@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1> Product Detail</h1>
+{% endblock %}
+
+{% block content_demo %}
+<p> --------- Details: --------- </p>
+<ul>
+    <li>id: {{ id }}</li>
+    <li>title: {{ title }}</li>
+    <li>description: {{ description }}</li>
+    <li>price: {{ price }}</li>
+    <li>summary: {{ summary }}</li>
+    <li>featured: {{ featured }}</li>
+</ul>
+{% endblock %}

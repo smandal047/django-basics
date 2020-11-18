@@ -13,6 +13,6 @@ def about_view(request):
     context = {
         'data': 'This page is about us',
         'number': '456456',
-        'count': [595, 595, 656, 565]
+        'count': [595, 656, 595, 'Abc']
     }
     return render(request, 'about.html', context)

@@ -14,7 +14,13 @@
 <p>Loop via template</p>
 <ul>
     {% for items in count %}
-    <li>{{ forloop.counter }} - {{ items }}</li>
-{% endfor %}
+        {% if items == 595 %}
+            <li>{{ forloop.counter }} - {{ items | add:"2" }}</li>
+        {% elif items == "Abc" %}
+            <li>ANything Random</li>
+        {% else %}
+            <li>{{ items }}</li>
+        {% endif %}
+    {% endfor %}
 </ul>
 {% endblock %}
